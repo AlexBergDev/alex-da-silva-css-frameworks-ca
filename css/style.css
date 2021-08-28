@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap");
+.body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(#ffffff, #efefef);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #e92569 !important;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.active {
+  background-color: white;
+  border-radius: 15px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  margin-top: 2rem;
+  font-size: 0.8em;
+  color: #767676;
+  padding: 0.5em;
+}
+
+footer i {
+  color: #767676;
+  font-size: 1em;
+}
+/*# sourceMappingURL=style.css.map */
