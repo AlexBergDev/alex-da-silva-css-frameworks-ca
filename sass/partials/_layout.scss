@@ -4,8 +4,7 @@ body {
 }
 
 body {
-  background: radial-gradient($colour-background, $colour-background-second);
-  color: white;
+  background: radial-gradient($colour-background-second, $colour-background);
   display: flex;
   flex-direction: column;
 }
