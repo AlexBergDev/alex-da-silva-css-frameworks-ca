@@ -6,9 +6,12 @@
 
 .nav-link {
   font-size: 16px;
+  padding: 2px;
+  color: $colour-heading !important;
 }
 
 .active {
-  background-color: white;
-  border-radius: 15px;
+  color: $colour-heading !important;
+  background-color: $colour-background;
+  border-radius: 3px;
 }
