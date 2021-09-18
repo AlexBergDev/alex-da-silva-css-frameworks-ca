@@ -11078,6 +11078,18 @@ body {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+  position: relative;
+}
+
+.news .btn:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  background: #767676;
 }
 
 .page-item {
@@ -11092,6 +11104,12 @@ footer {
   background-color: #ffffff;
   margin-top: 2rem;
   padding: 0.5em;
+}
+
+@media (max-width: 992px) {
+  footer {
+    padding: 25px 15px;
+  }
 }
 
 footer .container {
@@ -11117,6 +11135,20 @@ footer i {
   color: #767676;
   font-size: 30px !important;
   margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact {
