@@ -41,10 +41,29 @@
 .form-check {
   margin-bottom: 18px;
 
+  input {
+    appearance: none;
+  }
+
   .form-check-input {
-    border: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
     background-color: $colour-accent;
     border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    margin-left: -21px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $colour-accent-third;
+    }
+
+    &:checked {
+      background-color: $colour-accent-second;
+    }
   }
 
   .form-check-label {
