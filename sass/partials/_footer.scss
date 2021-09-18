@@ -3,6 +3,10 @@ footer {
   margin-top: 2rem;
   padding: 0.5em;
 
+  @media (max-width: $tablet) {
+    padding: 25px 15px;
+  }
+
   .container {
     display: flex;
     flex-shrink: 0;
@@ -21,5 +25,13 @@ footer {
     color: $colour-accent-second;
     font-size: 30px !important;
     margin-right: 10px;
+  }
+}
+
+.icons {
+  @media (max-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
