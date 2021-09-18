@@ -10968,7 +10968,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: bolder;
   color: #e92569 !important;
 }
 
@@ -11156,10 +11156,31 @@ footer i {
   margin-bottom: 18px;
 }
 
+.form-check input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .form-check .form-check-input {
-  border: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
   background-color: #e92569;
   border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  margin-left: -21px;
+  margin-right: 10px;
+}
+
+.form-check .form-check-input:hover {
+  background-color: #c7c7c7;
+}
+
+.form-check .form-check-input:checked {
+  background-color: #767676;
 }
 
 .form-check .form-check-label {
