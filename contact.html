@@ -4,56 +4,53 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The YAY Company - Contact</title>
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Julius+Sans+One&display=swap" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="wrapper">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">The YAY Company</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">The YAY Company</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Go</button>
+                    </form>
+                    </div>
                 </div>
             </nav>
         </header>
 
         <div class="container">
+            <h1>Submit your details</h1>
             <div class="row">
                 <div class="col-md order-md-2">
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item"><i class="fas fa-envelope"></i>hello@yay.com</li>
+                        <li class="list-group-item"><i class="fas fa-phone"></i>123 456 7890</li>
+                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i>123 Some Street<br>Somewhere<br>Some City<br>1000</li>
                     </ul>
                 </div>
                 <div class="col-md order-md-1">
-                    <form>
+                    <form class="contact">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="email" class="form-control" id="name" />
@@ -63,9 +60,22 @@
                             <input type="password" class="form-control" id="email" />
                         </div>
                         <div class="form-group">
+                            <label for="basic-url">Website</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">https://</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" rows="6"></textarea>
                         </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Allow us to sell your personal details to whomever we want</label>
+                          </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -73,9 +83,11 @@
         </div>
 
         <footer>
-            <div><i class="fa fa-vimeo"></i> <i class="fa fa-youtube-play"></i></div>
-            <div>hello@yay.com</div>
-            <div>Copyright 2020</div>
+            <div class="container">
+                <div class="icons"><i class="fa fa-vimeo"></i> <i class="fa fa-youtube-play"></i></div>
+                <p>hello@yay.com</p>
+                <p>Copyright 2020</p>
+            </div>
         </footer>
     </div>
 
