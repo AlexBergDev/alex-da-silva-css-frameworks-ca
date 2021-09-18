@@ -4,5 +4,33 @@
 
 h1 {
   font-family: $font-headings;
-  font-size: 20px;
+  color: $colour-accent;
+  font-size: 34px;
+  margin: 30px 0px;
+}
+
+p {
+  color: $colour-accent-second;
+  font-size: 16px;
+}
+
+.news {
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+.form-inline {
+  font-family: $font-primary;
+
+  .form-control {
+    font-size: 15px;
+    color: $colour-accent-second !important;
+  }
+  .btn {
+    font-size: 16px;
+  }
 }
