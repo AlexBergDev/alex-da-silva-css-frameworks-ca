@@ -17,10 +17,11 @@
     text-transform: uppercase;
   }
 
-.pagination {
-  margin: 40px 0px;
+  .pagination {
+    margin: 40px 0px;
 
-  .page-link {
-    border: $pagination-border-width solid $colour-accent;
+    .page-link {
+      border: $pagination-border-width solid $colour-accent;
+    }
   }
 }
