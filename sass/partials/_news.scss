@@ -15,6 +15,18 @@
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      border-radius: 0px 10px 10px 0px;
+      height: 100%;
+      background: $colour-accent-second;
+    }
   }
 }
 
