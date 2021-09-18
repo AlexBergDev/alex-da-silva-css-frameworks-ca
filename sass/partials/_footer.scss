@@ -22,12 +22,4 @@ footer {
     font-size: 30px !important;
     margin-right: 10px;
   }
-
-  .icons {
-    @media (max-width: 768px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
 }
