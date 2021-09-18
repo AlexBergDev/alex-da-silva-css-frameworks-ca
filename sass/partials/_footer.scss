@@ -1,15 +1,33 @@
 footer {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
   background-color: $colour-background;
   margin-top: 2rem;
-  font-size: 0.8em;
-  color: $colour-accent-second;
   padding: 0.5em;
+
+  .container {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $colour-accent-second;
+    margin: 0;
+    padding: 0;
+  }
 
   & i {
     color: $colour-accent-second;
-    font-size: 1em;
+    font-size: 30px !important;
+    margin-right: 10px;
+  }
+
+  .icons {
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
