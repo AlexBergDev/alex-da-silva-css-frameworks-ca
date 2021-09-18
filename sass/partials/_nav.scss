@@ -1,6 +1,8 @@
 .navbar-brand {
   font-family: $font-headings;
   font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
   color: $colour-accent !important;
 }
 
@@ -14,4 +16,28 @@
   color: $colour-heading !important;
   background-color: $colour-background;
   border-radius: 3px;
+}
+
+.navbar-collapse {
+  z-index: 1;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  height: 25px;
+}
+
+.form-inline {
+  .form-control {
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .btn {
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+  }
 }
