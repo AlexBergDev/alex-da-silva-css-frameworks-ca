@@ -13,7 +13,6 @@
 .nav-link {
   font-size: 16px;
   padding: 2px;
-  margin: 0px 13px;
   color: $colour-heading !important;
 }
 
@@ -69,6 +68,10 @@
 
   @media (min-width: $tablet +1) {
     padding: 14px;
+  }
+
+  .nav-link {
+    margin: 0px 13px;
   }
 
   .nav-item {
