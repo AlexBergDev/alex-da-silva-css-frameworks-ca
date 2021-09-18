@@ -1,0 +1,26 @@
+.news {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 25px -4px $colour-accent-third;
+  box-shadow: 0px 5px 25px -4px $colour-accent-third;
+  margin-bottom: 30px;
+
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .btn {
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+.pagination {
+  margin: 40px 0px;
+
+  .page-link {
+    border: $pagination-border-width solid $colour-accent;
+  }
+}
