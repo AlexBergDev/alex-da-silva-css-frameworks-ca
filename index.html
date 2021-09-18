@@ -4,19 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The YAY Company - Home</title>
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Julius+Sans+One&display=swap" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+              <div class="container">
                 <a class="navbar-brand" href="#">The YAY Company</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,9 +31,10 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Go</button>
                 </form>
                 </div>
+              </div>
             </nav>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -54,38 +50,59 @@
                 </div>
               </div>
 
-              <h1>We do YAY things</h1>
-              <p>Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.</p>
+              <div class="container">
+                <h1>We do YAY things</h1>
+                <p>Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.</p>
 
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">First</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Second</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Third</button>
-                </li>
+                <ul class="nav flex-column flex-md-row nav-tabs">
+                  <li class="nav-item">
+                      <a href="#first" class="nav-link active" data-toggle="tab">First</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#second" class="nav-link" data-toggle="tab">Second</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#third" class="nav-link" data-toggle="tab">Third</a>
+                  </li>
               </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.</div>
-                    <div>Share <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                    <div class="row">
+                      <div class="col-sm-4"><img src="images/tab/tab-1.jpg" alt="..." class="mx-auto d-block tab-images"></div>
+                      <div class="col-sm-8">
+                        <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.</p>
+                        <div class="share-box">Share <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                    <div class="row">
+                      <div class="col-sm-4"><img src="images/tab/tab-2.jpg" alt="..." class="mx-auto d-block tab-images"></div>
+                      <div class="col-sm-8">
+                        <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.</p>
+                        <div class="share-box">Share <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                    <div class="row">
+                      <div class="col-sm-4"><img src="images/tab/tab-3.jpg" alt="..." class="mx-auto d-block tab-images"></div>
+                      <div class="col-sm-8">
+                        <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.</p>
+                        <div class="share-box">Share <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></div>
+                      </div>
+                    </div>
+                  </div>
               </div>
-
-        
+            </div>
 
         <footer>
-            <div><i class="fa fa-vimeo"></i> <i class="fa fa-youtube-play"></i></div>
-            <div>hello@yay.com</div>
-            <div>Copyright 2020</div>
+          <div class="container">
+            <div class="icons"><i class="fa fa-vimeo"></i> <i class="fa fa-youtube-play"></i></div>
+            <p>hello@yay.com</p>
+            <p>Copyright 2020</p>
+          </div>
         </footer>
-
-    </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script
