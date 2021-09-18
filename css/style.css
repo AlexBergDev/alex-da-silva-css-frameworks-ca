@@ -10945,6 +10945,20 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .tab-content .share-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .tab-content i {
   font-size: 22px;
   margin-left: 12px;
@@ -10958,9 +10972,16 @@ body {
   color: #e92569 !important;
 }
 
+@media (min-width: 993px) {
+  .navbar-brand {
+    margin-right: 30px;
+  }
+}
+
 .nav-link {
   font-size: 16px;
   padding: 2px;
+  margin: 0px 13px;
   color: #0a0a0a !important;
 }
 
@@ -10968,6 +10989,13 @@ body {
   color: #0a0a0a !important;
   background-color: #ffffff;
   border-radius: 3px;
+}
+
+@media (max-width: 992px) {
+  .active {
+    -webkit-box-shadow: 0px 5px 25px -4px #efefef;
+    box-shadow: 0px 5px 25px -4px #efefef;
+  }
 }
 
 .navbar-collapse {
@@ -10987,9 +11015,46 @@ body {
   border-radius: 5px 0px 0px 5px;
 }
 
+@media (max-width: 992px) {
+  .form-inline .form-control {
+    max-width: 89%;
+    padding: 25px;
+  }
+}
+
 .form-inline .btn {
   border-radius: 0px 5px 5px 0px;
   margin-left: -10px;
+}
+
+@media (max-width: 992px) {
+  .form-inline .btn {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    -webkit-box-shadow: 0px 5px 25px -4px #efefef;
+    box-shadow: 0px 5px 25px -4px #efefef;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .nav-item {
+    padding: 10px;
+    padding-left: 20px;
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .news {
@@ -11012,12 +11077,12 @@ body {
   text-transform: uppercase;
 }
 
-.news .pagination {
-  margin: 40px 0px;
+.page-item {
+  margin: 25px 0px;
 }
 
-.news .pagination .page-link {
-  border: 1px solid #e92569;
+.page-item .page-link {
+  border-color: #e92569;
 }
 
 footer {
@@ -11094,6 +11159,7 @@ footer i {
 .form-check .form-check-input {
   border: none;
   background-color: #e92569;
+  border-radius: 3px;
 }
 
 .form-check .form-check-label {
