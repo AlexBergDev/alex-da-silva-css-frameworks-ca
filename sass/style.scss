@@ -1,3 +1,4 @@
+@import "partials/base";
 @import "partials/custom";
 
 @import "../bootstrap/scss/functions";
@@ -38,7 +39,6 @@
 @import "../bootstrap/scss/utilities";
 @import "../bootstrap/scss/print";
 
-@import "partials/base";
 @import "partials/typography";
 @import "partials/layout";
 @import "partials/home";
