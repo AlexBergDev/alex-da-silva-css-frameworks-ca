@@ -9205,13 +9205,18 @@ body {
   font-weight: 300;
 }
 
-.tab-content .share-box {
+.tab-content i {
+  font-size: 22px;
+  margin-left: 12px;
+}
+
+.share-box {
   text-transform: uppercase;
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  .tab-content .share-box {
+@media (max-width: 992px) {
+  .share-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9221,12 +9226,40 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 15px;
+  }
+  .share-box i {
+    padding: 5px;
+    font-size: 28px;
+    margin-left: 10px;
   }
 }
 
-.tab-content i {
-  font-size: 22px;
-  margin-left: 12px;
+.accordion {
+  -webkit-box-shadow: 0px 5px 25px -4px #c7c7c7;
+  box-shadow: 0px 5px 25px -4px #c7c7c7;
+  border-radius: 10px;
+}
+
+.accordion .card {
+  border-radius: 10px;
+  border: none;
+}
+
+.accordion .card-header {
+  background-color: #ffffff;
+}
+
+.accordion .btn {
+  font-size: 19px;
+}
+
+.accordion .show {
+  border-top: 1px solid #e92569;
+}
+
+.accordion .card-body {
+  background-color: #efefef;
 }
 
 .navbar-brand {
@@ -9297,8 +9330,8 @@ body {
 
 @media (max-width: 992px) {
   .navbar {
-    -webkit-box-shadow: 0px 5px 25px -4px #efefef;
-    box-shadow: 0px 5px 25px -4px #efefef;
+    -webkit-box-shadow: 0px 5px 25px -4px #0a0a0a;
+    box-shadow: 0px 5px 25px -4px #0a0a0a;
   }
 }
 
