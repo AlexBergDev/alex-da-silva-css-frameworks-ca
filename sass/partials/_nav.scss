@@ -3,7 +3,6 @@
   font-size: 20px;
   font-style: italic;
   font-weight: bolder;
-  color: $colour-accent !important;
 
   @media (min-width: $tablet +1) {
     margin-right: 30px;
@@ -17,7 +16,6 @@
 }
 
 .active {
-  color: $colour-heading !important;
   background-color: $colour-background;
   border-radius: 3px;
 
