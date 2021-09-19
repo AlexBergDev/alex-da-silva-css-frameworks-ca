@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: $font-primary;
 }
 
@@ -24,8 +24,6 @@ p {
   }
 }
 .form-inline {
-  font-family: $font-primary;
-
   .form-control {
     font-size: 15px;
     color: $colour-accent-second !important;
