@@ -1,1 +1,7 @@
-$primary: #e92569;
+// Colours
+$primary: $colour-accent;
+
+// Nav
+$navbar-light-brand-color: $primary;
+$navbar-light-color: $primary;
+$navbar-light-active-color: $colour-heading;
