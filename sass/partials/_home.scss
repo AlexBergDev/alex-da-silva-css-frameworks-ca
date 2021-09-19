@@ -7,7 +7,7 @@
   li {
     width: 30px;
     height: 30px;
-    background-color: $colour-background !important;
+    background-color: $colour-background;
     margin: 10px;
     border-radius: 2px;
     opacity: 1;
@@ -17,7 +17,7 @@
   }
 
   .active {
-    background-color: $colour-accent !important;
+    background-color: $colour-accent;
   }
 }
 
